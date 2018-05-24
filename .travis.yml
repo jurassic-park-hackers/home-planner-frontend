@@ -4,6 +4,8 @@ node_js:
   - "node"
 notifications:
   email: false
+before_deploy:
+  - yarn build
 deploy:
   provider: firebase
   token:
